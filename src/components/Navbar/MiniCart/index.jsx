@@ -44,7 +44,7 @@ class MiniCart extends React.Component {
     const { isHovered } = this.state;
     const { cart, location } = this.props;
     const count = Object.values(cart).reduce(handleCount, 0);
-    const isCartPage = location.pathname === '/cart';
+    const isCartCheckOutPage = /cart|checkout/.test(location.pathname);
     return <React.Fragment>
       <S.NavListContainer
         ref={this.listRef}
@@ -56,12 +56,12 @@ class MiniCart extends React.Component {
             onClick={this.handlePageCart}/>
           {count > 0 && <CartCounter children={count}/>}
         </Link>
-        {isCartPage ? null : count > 0 ?
+        {isCartCheckOutPage ? null : count > 0 ?
           <ProductsList isHovered={isHovered}/> :
           <EmptyCart isHovered={isHovered}/>
         }
       </S.NavListContainer>
-      {!isCartPage && <S.NavBlur isHovered={isHovered}/>}
+      {!isCartCheckOutPage && <S.NavBlur isHovered={isHovered}/>}
     </React.Fragment>
     
   }
