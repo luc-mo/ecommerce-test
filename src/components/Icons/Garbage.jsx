@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Img } from 'components/styles';
+import { Img } from 'styles';
 import { garbage } from 'icons';
 
 class Garbage extends React.PureComponent {

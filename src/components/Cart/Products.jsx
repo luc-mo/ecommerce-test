@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { mapStateToProps, mapDispatchToProps } from 'store';
 
-import { Li } from './styles';
+import * as S from 'styles/Cart/Products';
 import Data from './Data';
 import Options from './Options';
 
@@ -11,10 +11,10 @@ class Products extends React.Component {
     const { cart } = this.props;
     const productsArray = Object.values(cart);
     return <ul>
-      {productsArray.map(product => <Li key={product.id}>
+      {productsArray.map(product => <S.Li key={product.id}>
         <Data product={product}/>
         <Options product={product}/>
-      </Li>)}
+      </S.Li>)}
     </ul>
   }
 }

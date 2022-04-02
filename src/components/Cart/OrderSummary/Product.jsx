@@ -1,7 +1,7 @@
 import React from 'react';
 
-import * as S from './styles';
-import { P } from 'components/styles';
+import * as S from 'styles/OrderSummary/ProductList';
+import { P } from 'styles';
 
 class Product extends React.Component {
   render() {

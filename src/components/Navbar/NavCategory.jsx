@@ -1,5 +1,5 @@
 import React from 'react';
-import * as S from './styles';
+import * as S from 'styles/Navbar/NavCategory';
 
 class NavCategory extends React.PureComponent {
   render() {

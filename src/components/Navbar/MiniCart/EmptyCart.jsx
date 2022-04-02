@@ -1,12 +1,14 @@
 import React from 'react';
-import * as S from '../styles';
-import { P } from 'components/styles';
+
+import { P } from 'styles';
+import * as S from 'styles/MiniCart/EmptyCart';
+import { ProductsList } from 'styles/MiniCart/ProductsList';
 import { CartIconHappy } from 'components/Icons';
 
 class EmptyCart extends React.PureComponent {
   render() {
     const { isHovered } = this.props;
-    return <S.ProductsList isHovered={isHovered}>
+    return <ProductsList isHovered={isHovered}>
       <S.EmptyCart>
         <P children='Your shopping cart is empty :('
           weight='bold'
@@ -16,7 +18,7 @@ class EmptyCart extends React.PureComponent {
           size='24'/>
         <CartIconHappy height='80'/>
       </S.EmptyCart>
-    </S.ProductsList>
+    </ProductsList>
   }
 }
 

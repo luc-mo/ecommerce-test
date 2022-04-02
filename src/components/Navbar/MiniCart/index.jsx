@@ -4,7 +4,8 @@ import { connect } from 'react-redux';
 import { mapStateToProps } from 'store';
 import { handlePageCart, handleCount } from 'utils';
 
-import * as S from '../styles';
+import * as S from 'styles';
+import { CartCounter } from 'styles/MiniCart'
 import { CartIcon } from 'components/Icons';
 import ProductsList from './ProductsList';
 import EmptyCart from './EmptyCart';
@@ -45,7 +46,7 @@ class MiniCart extends React.Component {
     const count = Object.values(cart).reduce(handleCount, 0);
     const isCartPage = location.pathname === '/cart';
     return <React.Fragment>
-      <S.ListsContainer
+      <S.NavListContainer
         ref={this.listRef}
         onMouseEnter={this.handleEnter}
         onMouseLeave={this.handleLeave}>
@@ -53,13 +54,13 @@ class MiniCart extends React.Component {
           <S.NavButton 
             children={<CartIcon/>}
             onClick={this.handlePageCart}/>
-          {count > 0 && <S.CartCounter children={count}/>}
+          {count > 0 && <CartCounter children={count}/>}
         </Link>
         {isCartPage ? null : count > 0 ?
           <ProductsList isHovered={isHovered}/> :
           <EmptyCart isHovered={isHovered}/>
         }
-      </S.ListsContainer>
+      </S.NavListContainer>
       {!isCartPage && <S.NavBlur isHovered={isHovered}/>}
     </React.Fragment>
     

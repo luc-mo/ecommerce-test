@@ -3,8 +3,8 @@ import { connect } from 'react-redux';
 import { mapStateToProps, mapDispatchToProps } from 'store';
 import { handleCart, handleDefaultAttributes } from 'utils';
 
-import * as S from './styles';
-import { H1, H2, P } from 'components/styles';
+import * as S from 'styles/PDP/Data';
+import { H1, H2, P } from 'styles';
 import Attribute from './Attribute';
 
 class Data extends React.Component {

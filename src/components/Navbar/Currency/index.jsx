@@ -2,9 +2,9 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { mapStateToProps } from 'store';
 
-import * as S from '../styles';
+import * as S from 'styles';
 import CurrencyList from './CurrencyList';
-import { NavArrow as Arrow } from 'components/Icons';
+import { NavArrow } from 'components/Icons';
 
 class CurrencyButton extends React.PureComponent {
   constructor(props) {
@@ -20,16 +20,16 @@ class CurrencyButton extends React.PureComponent {
     const { currencies, selected } = this.props.currencies; 
     const { isHovered } = this.state;
     return <React.Fragment>
-      <S.ListsContainer
+      <S.NavListContainer
         ref={this.listRef}
         onMouseEnter={handleHoverEnter}
         onMouseLeave={handleHoverLeave}>
         <S.NavButton>
           {currencies[selected]?.symbol}
-          <Arrow isHovered={isHovered}/>
+          <NavArrow isHovered={isHovered}/>
         </S.NavButton>
         <CurrencyList isHovered={isHovered}/>
-      </S.ListsContainer>
+      </S.NavListContainer>
       <S.NavBlur isHovered={isHovered}/>
     </React.Fragment>
   }

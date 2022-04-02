@@ -2,8 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { mapStateToProps, mapDispatchToProps } from 'store';
 
-import { H3, AttrSwatch, AttrValue } from 'components/styles';
-import * as S from './styles';
+import { H3, AttrSwatch, AttrValue } from 'styles';
+import * as S from 'styles/Cart/Attribute';
 
 class Attribute extends React.Component {
   handleAttribute = ({ target }) => {

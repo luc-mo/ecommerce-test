@@ -1,6 +1,6 @@
 import React from 'react';
-import { Img } from 'components/styles';
-import * as S from './styles';
+import { Img } from 'styles';
+import * as S from 'styles/PDP/Poster';
 
 class Poster extends React.Component {
   render() {

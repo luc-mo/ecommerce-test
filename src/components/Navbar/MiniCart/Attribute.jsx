@@ -2,8 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { mapStateToProps, mapDispatchToProps } from 'store';
 
-import * as S from '../styles';
-import { H5, MiniCartSwatch, MiniCartAttr } from 'components/styles';
+import * as S from 'styles/MiniCart/Attribute';
+import { H5 } from 'styles';
 
 class Attribute extends React.Component {
   handleAttribute = ({ target }) => {
@@ -21,18 +21,18 @@ class Attribute extends React.Component {
       <H5>{name.toUpperCase()}:</H5>
       <S.ItemsContainer>
         {items.map(item => isSwatch ?
-          <MiniCartSwatch
+          <S.MiniCartSwatch
             data-value={item.value}
             selected={selected}
             onClick={this.handleAttribute}
             key={item.value}/> :
-          <MiniCartAttr
+          <S.MiniCartAttr
             data-value={item.value}
             selected={selected}
             onClick={this.handleAttribute}
             key={item.value}>
             {item.displayValue}
-          </MiniCartAttr>
+          </S.MiniCartAttr>
         )}
       </S.ItemsContainer>
     </S.Attribute>

@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { mapStateToProps, mapDispatchToProps } from 'store';
+import { mapStateToProps } from 'store';
 
-import * as S from '../styles';
+import * as S from 'styles/Currency';
 import CurrencyItem from './CurrencyItem';
 
 class CurrencyList extends React.PureComponent {
@@ -21,7 +21,4 @@ class CurrencyList extends React.PureComponent {
   }
 }
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(CurrencyList);
+export default connect(mapStateToProps)(CurrencyList);

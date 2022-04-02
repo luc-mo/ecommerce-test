@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { mapStateToProps, mapDispatchToProps } from 'store';
-import * as S from '../styles';
+import { mapDispatchToProps } from 'store';
+import * as S from 'styles/Currency';
 
 class Item extends React.PureComponent {
   handleCurrency = () => {
@@ -18,6 +18,6 @@ class Item extends React.PureComponent {
 }
 
 export default connect(
-  mapStateToProps,
+  null,
   mapDispatchToProps
 )(Item);

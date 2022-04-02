@@ -1,6 +1,6 @@
 import React from 'react';
 
-import * as S from './styles';
+import * as S from 'styles/Icons';
 import { arrow } from 'icons';
 
 export class CarouselArrow extends React.PureComponent {

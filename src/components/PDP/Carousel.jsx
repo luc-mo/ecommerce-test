@@ -1,6 +1,6 @@
 import React from 'react';
-import * as S from './styles';
-import { CarouselArrow as Arrow } from 'components/Icons';
+import * as S from 'styles/PDP/Carousel';
+import { CarouselArrow } from 'components/Icons';
 
 class Carousel extends React.Component {
   constructor(props) {
@@ -25,7 +25,7 @@ class Carousel extends React.Component {
       {gallery.length === 1 ? <S.GalleryImg alt='carousel' src={gallery[0]}/> :
       gallery.length > 0 && <React.Fragment>
         <S.ArrowButton
-          children={<Arrow inverted/>}
+          children={<CarouselArrow inverted/>}
           value={-1}
           onClick={this.handleCarousel}
         />
@@ -33,7 +33,7 @@ class Carousel extends React.Component {
         <S.GalleryImg alt='carousel' src={gallery[imageIndex]} center/>
         <S.GalleryImg alt='carousel' src={gallery[nextIndex]}/>
         <S.ArrowButton
-          children={<Arrow/>}
+          children={<CarouselArrow/>}
           value={1}
           onClick={this.handleCarousel}
         />

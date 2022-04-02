@@ -9,7 +9,7 @@ import {
   handleTotal
 } from 'utils';
 
-import * as S from './styles';
+import * as S from 'styles/MiniCart/ProductsList';
 import Product from './Product';
 
 class ProductsList extends React.Component {

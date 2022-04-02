@@ -7,7 +7,7 @@ import {
   handleDelete
 } from 'utils';
 
-import * as S from './styles';
+import * as S from 'styles/Cart/Options';
 import { Garbage } from 'components/Icons';
 import { DeleteView } from 'components/DeleteView';
 

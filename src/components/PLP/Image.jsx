@@ -1,7 +1,7 @@
 import React from 'react';
 
-import * as S from './styles';
-import { Img } from 'components/styles';
+import * as S from 'styles/PLP/Image';
+import { Img } from 'styles';
 
 class Image extends React.PureComponent {
   render() {

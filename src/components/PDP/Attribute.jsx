@@ -1,6 +1,6 @@
 import React from 'react';
-import { H2, AttrSwatch, AttrValue } from 'components/styles';
-import { Items } from './styles';
+import { H2, AttrSwatch, AttrValue } from 'styles';
+import * as S from 'styles/PDP/Attribute';
 
 class Attribute extends React.Component {
   setAttribute = ({ target }) => {
@@ -16,7 +16,7 @@ class Attribute extends React.Component {
     const isSwatch = type === 'swatch';
     return <div>
       <H2 size='20'>{name.toUpperCase()}:</H2>
-      <Items>
+      <S.Items>
         {items.map(item => isSwatch ?
           <AttrSwatch
             onClick={this.setAttribute}
@@ -31,7 +31,7 @@ class Attribute extends React.Component {
             {item.displayValue}
           </AttrValue>
         )}
-      </Items>
+      </S.Items>
     </div>
   }
 }

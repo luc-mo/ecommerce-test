@@ -1,5 +1,5 @@
 import React from 'react';
-import * as S from './styles';
+import * as S from 'styles/Cart/Image';
 
 class Image extends React.Component {
   render() {

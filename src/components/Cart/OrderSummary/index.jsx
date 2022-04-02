@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { mapStateToProps, mapDispatchToProps } from 'store';
 import { handleTotal, handlePageCheckOut } from 'utils';
 
-import * as S from './styles';
+import * as S from 'styles/OrderSummary';
 import ProductsList from './ProductsList';
 
 class OrderSummary extends React.Component {

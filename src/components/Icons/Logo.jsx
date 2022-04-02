@@ -1,6 +1,6 @@
 import React from 'react';
 
-import * as S from './styles';
+import * as S from 'styles/Icons';
 import { logo } from 'icons';
 
 class Logo extends React.PureComponent {

@@ -1,7 +1,7 @@
 import React from 'react';
 
-import * as S from './styles';
-import { P } from 'components/styles';
+import * as S from 'styles/Cart/Quantity';
+import { P } from 'styles';
 
 class Quantity extends React.Component {
   handleIncrement = () => this.props.incrementCount(this.props.product.id);

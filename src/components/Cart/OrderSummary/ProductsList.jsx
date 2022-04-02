@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { mapStateToProps } from 'store';
 
-import * as S from './styles';
+import * as S from 'styles/OrderSummary/ProductList';
 import Product from './Product';
 
 class ProductsList extends React.Component {

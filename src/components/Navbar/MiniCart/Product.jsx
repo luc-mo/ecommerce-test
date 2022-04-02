@@ -3,8 +3,8 @@ import { connect } from 'react-redux';
 import { mapStateToProps, mapDispatchToProps } from 'store';
 import { handleDeleteView, handleDelete } from 'utils';
 
-import * as S from './styles';
-import { H4 } from 'components/styles';
+import * as S from 'styles/MiniCart/Product';
+import { H4 } from 'styles';
 import { Garbage } from 'components/Icons';
 import { DeleteView } from 'components/DeleteView';
 import Attribute from './Attribute';

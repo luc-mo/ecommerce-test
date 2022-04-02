@@ -3,8 +3,8 @@ import { connect } from 'react-redux';
 import { mapStateToProps, mapDispatchToProps } from 'store';
 import { handlePagePDP, handleCart, handleDefaultAttributes } from 'utils';
 
-import * as S from './styles';
-import { H2, P } from 'components/styles';
+import * as S from 'styles/PLP/Product';
+import { H2, P } from 'styles';
 import { CartIconWhite } from 'components/Icons';
 
 import Image from './Image';

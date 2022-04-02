@@ -1,7 +1,7 @@
 import React from 'react';
 
-import * as S from './styles';
-import { Img } from 'components/styles';
+import * as S from 'styles/Icons';
+import { Img } from 'styles';
 import { cart, cartWhite, happyCart } from 'icons';
 
 export class CartIcon extends React.PureComponent {

@@ -2,8 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { mapStateToProps } from 'store';
 
-import * as S from './styles';
-import { P } from 'components/styles';
+import * as S from 'styles/Cart/Data';
+import { P } from 'styles';
 import Attribute from './Attribute';
 
 class Data extends React.Component {
