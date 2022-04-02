@@ -9,8 +9,7 @@ export function handlePageCart() {
 }
 
 export function handlePageCheckOut() {
-  const { history, removeAllProductsFromCart } = this.props;
-  removeAllProductsFromCart();
+  const { history } = this.props;
   history.push('/checkout');
 }
 

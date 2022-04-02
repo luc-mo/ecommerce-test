@@ -1,10 +1,19 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { mapStateToProps, mapDispatchToProps } from 'store';
 
 import * as S from 'styles/CheckOut';
 import { P, Link } from 'styles';
 import { CartIconHappy } from 'components/Icons';
 
 class CheckOut extends React.Component {
+  componentDidMount() {
+    const { cart, history, removeAllProductsFromCart } = this.props;
+    const cartLength = Object.keys(cart).length;
+    if(cartLength === 0) return history.push('/');
+    removeAllProductsFromCart();
+  }
+
   render() {
     return <S.Main>
       <P children='Thank you for shopping in our store!' size='40'/>
@@ -16,4 +25,7 @@ class CheckOut extends React.Component {
   }
 }
 
-export default CheckOut;
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(CheckOut);
