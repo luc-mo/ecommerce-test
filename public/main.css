@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url('./fonts/Raleway.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('./fonts/SourceSansPro-Regular.ttf') format('truetype');
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: 0 0 5px rgb(144, 144, 144, 0.3) inset;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5ECE7B;
+  box-shadow: 0 0 5px #5d5d5d inset;
+  border-radius: 10px;
+}

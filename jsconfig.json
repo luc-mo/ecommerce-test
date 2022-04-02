@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "components": ["/components"],
+      "pages": ["/pages"],
+      "store": ["/store"],
+      "utils": ["/utils"],
+      "apollo": ["/apollo"],
+      "icons": ["/icons"],
+      "styles": ["/styles"]
+    }
+  },
+  "include": ["src/**/*"]
+}
